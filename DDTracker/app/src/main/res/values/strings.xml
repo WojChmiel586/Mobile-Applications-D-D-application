@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">D&amp;DTracker</string>
+    <string name="Next_Turn">Next turn</string>
+    <string name="ROLL">ROLL!</string>
+    <string name="result">RESULT</string>
+    <string name="amount_of_dice">AMOUNT OF DICE</string>
+    <string name="type_of_dice">TYPE OF DICE</string>
+    <string name="show_results_of_separate_rolls">Show results of separate rolls</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="finish">Finish</string>
+    <string name="initiative">Initiative</string>
+    <string name="current_hp">Current HP</string>
+    <string name="max_hp">Max HP</string>
+    <string name="name">Name</string>
+    <string name="new_encounter">New Encounter</string>
+    <string name="saved_encounters">Saved Encounters</string>
+    <string name="dice_roller">Dice Roller</string>
+</resources>

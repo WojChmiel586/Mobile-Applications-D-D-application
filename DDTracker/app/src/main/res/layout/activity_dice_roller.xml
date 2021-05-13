@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".DiceRoller">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/diceSpinner"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/spinner_bg"
+        android:dropDownSelector="@color/TextBox"
+        android:popupBackground="@color/TextBox"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/diceAmount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/diceAmount"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="200dp"
+        android:autofillHints=""
+        android:background="@color/TextBox"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:text="@string/ROLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rollResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/TextBox"
+        android:hint="@string/result"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollDiceButton" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/TextBox"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:labelFor="@id/diceAmount"
+        android:text="@string/amount_of_dice"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/Text"
+        app:layout_constraintBottom_toTopOf="@+id/diceAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/TextBox"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/type_of_dice"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/Text"
+        app:layout_constraintBottom_toTopOf="@+id/diceSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        android:autofillHints="" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@color/TextBox"
+        android:buttonTint="@color/Buttons"
+        android:padding="10dp"
+        android:text="@string/show_results_of_separate_rolls"
+        android:textColor="@color/Text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rollDiceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
